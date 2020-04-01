@@ -5,15 +5,25 @@ header {
     justify-content: center;
 
         nav {
-            background-color: green;
-            height: 30px;
+            height: 70px;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
+            #logo {
+                /*
+                background-image: url('https://teambit.io/wp-content/themes/teambeat/img/logo.svg');
+                background-repeat: no-repeat;
+                */
+
+                width: 30%;
+                height: 30px;
+
+            }
+
             .header-links {
                 display: flex;
-                
+
                 ul {
                     li {
                         float: left;
