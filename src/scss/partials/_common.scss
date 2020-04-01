@@ -1,0 +1,13 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-fullwidth {
+    width: $full_width;
+}
+
+.container {
+    width: $full-width * 0.9;
+}
