@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  color: black;
+}
+
 .container-fullwidth {
   width: 100vw;
 }
@@ -16,6 +20,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* MAIN */
@@ -57,11 +62,38 @@ header nav #logo {
 
 header nav .header-links {
   display: flex;
+  align-items: center;
 }
 
 header nav .header-links ul li {
   float: left;
   list-style: none;
+  padding-right: 30px;
+}
+
+header nav .header-links ul a:hover {
+  color: darkblue;
+}
+
+header nav .header-links .btn-sign-up {
+  padding: 5px 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+header nav .header-links .btn-sign-up svg {
+  margin-right: 5px;
+}
+
+header nav .header-links .btn-sign-up span {
+  color: #30488f;
+}
+
+header nav .header-links .btn-sign-up:hover {
+  background-color: #30488f;
+  color: white;
 }
 
 /* FOOTER */

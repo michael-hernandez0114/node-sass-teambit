@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    color: $primary_text_color;
+}
+
 .container-fullwidth {
     width: $full_width;
 }
@@ -14,4 +18,5 @@
 
 a {
     text-decoration: none;
+    color: $primary_text_color;
 }

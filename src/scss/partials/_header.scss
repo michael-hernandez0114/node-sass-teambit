@@ -23,13 +23,42 @@ header {
 
             .header-links {
                 display: flex;
+                align-items: center;
 
                 ul {
                     li {
                         float: left;
                         list-style: none;
+
+                        padding-right: 30px;
+                    }
+                    a {
+                        &:hover {
+                            color: darkblue;
+                        }
                     }
 
+                }
+
+                .btn-sign-up {
+                    padding: 5px 10px;
+                    border: 1px solid blue;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 5px;
+                    }
+
+                    span {
+                        color: #30488f;
+                    }
+
+                    &:hover {
+                        background-color: #30488f;
+                        color: white;
+                    }
                 }
             }
         }
