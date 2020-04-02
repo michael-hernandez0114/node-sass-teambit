@@ -9,6 +9,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid black;
 
             #logo {
                 /*
@@ -24,13 +25,14 @@ header {
             .header-links {
                 display: flex;
                 align-items: center;
+                font-size: $font_size_sm;
+                font-weight: $font_weight;
 
                 ul {
                     li {
                         float: left;
                         list-style: none;
-
-                        padding-right: 30px;
+                        padding-right: 40px;
                     }
                     a {
                         &:hover {
@@ -46,13 +48,12 @@ header {
                     border-radius: 5px;
                     display: flex;
                     align-items: center;
+                    color: #30488f;
+                    font-size: 13px;
+                    font-weight: $font_weight;
 
                     svg {
                         margin-right: 5px;
-                    }
-
-                    span {
-                        color: #30488f;
                     }
 
                     &:hover {

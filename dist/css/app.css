@@ -31,7 +31,6 @@ main #jumbotron {
 }
 
 main #jumbotron #jumbotron-content {
-  background-color: blue;
   height: 400px;
 }
 
@@ -49,6 +48,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid black;
 }
 
 header nav #logo {
@@ -63,12 +63,14 @@ header nav #logo {
 header nav .header-links {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 header nav .header-links ul li {
   float: left;
   list-style: none;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 header nav .header-links ul a:hover {
@@ -81,14 +83,13 @@ header nav .header-links .btn-sign-up {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  color: #30488f;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 header nav .header-links .btn-sign-up svg {
   margin-right: 5px;
-}
-
-header nav .header-links .btn-sign-up span {
-  color: #30488f;
 }
 
 header nav .header-links .btn-sign-up:hover {
