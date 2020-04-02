@@ -20,3 +20,15 @@ a {
     text-decoration: none;
     color: $primary_text_color;
 }
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #30488f;
+    color: white;
+
+    &:hover {
+        background-color: #233569;
+    }
+
+}

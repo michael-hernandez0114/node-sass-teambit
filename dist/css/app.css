@@ -23,14 +23,57 @@ a {
   color: black;
 }
 
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #30488f;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #233569;
+}
+
 /* MAIN */
 
 main #jumbotron {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 main #jumbotron #jumbotron-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #jumbotron #jumbotron-content #jumbotron-left {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main #jumbotron #jumbotron-content #jumbotron-left h1 {
+  font-size: 50px;
+  line-height: 70px;
+}
+
+main #jumbotron #jumbotron-content #jumbotron-left .btn-group .btn-group-text {
+  padding: 0 10px;
+}
+
+main #jumbotron #jumbotron-content #jumbotron-left a:hover {
+  color: #30488f;
+}
+
+main #jumbotron #jumbotron-content #jumbotron-right {
+  flex-basis: 45%;
+}
+
+main #jumbotron #jumbotron-content #jumbotron-right img {
+  width: 100%;
   height: 400px;
 }
 
