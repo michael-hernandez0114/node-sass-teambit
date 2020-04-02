@@ -33,6 +33,28 @@ header {
                         float: left;
                         list-style: none;
                         padding-right: 40px;
+                        position: relative;
+
+                        .hidden-menu {
+                            display: none;
+                            position: absolute;
+                            top: 20px;
+                            right: -10px;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 5px;
+                            border: 1px solid black;
+
+                            ul {
+                                li {
+                                    list-style: none;
+                                }
+                            }
+                        }
+
+                    }
+                    #solutions:hover .hidden-menu {
+                        display: block;
                     }
                     a {
                         &:hover {

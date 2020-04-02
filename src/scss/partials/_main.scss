@@ -24,7 +24,7 @@ main {
                         padding: 0 10px;
                     }
                 }
-                a:hover {
+                .hover-blue-font:hover {
                     color: #30488f;
                 }
             }
@@ -35,19 +35,29 @@ main {
                     height: 400px;
                 }
             }
-
-
-
-
-
         }
     }
 
-    #disengagement {
+    #people {
         background-color: $bgc_lightbrown;
-        height: 1000px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0;
+
+        #disengagement {
+            border-bottom: 1px solid gray;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 100px;
+        }
+
+        #team {
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
 
         .container {
             display: flex;
@@ -55,10 +65,16 @@ main {
             justify-content: center;
             align-items: center;
 
+            h2 {
+                font-size: $font_size_md;
+            }
+
             .card-container {
+                margin: auto;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
+                padding: 30px 0;
 
                 .card {
                     width: 300px;
@@ -72,11 +88,16 @@ main {
                         width: 150px;
                         height: 100px;
                     }
+                    p {
+                        padding-top: 20px;
+                        font-size: $font_size_standard;
+                        text-align: center;
+                    }
                 }
             }
             img {
-                width: 275px;
-                height: 250px;
+                width: 300px;
+                height: 275px;
             }
         }
     }

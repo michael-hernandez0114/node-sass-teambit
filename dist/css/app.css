@@ -64,7 +64,7 @@ main #jumbotron #jumbotron-content #jumbotron-left .btn-group .btn-group-text {
   padding: 0 10px;
 }
 
-main #jumbotron #jumbotron-content #jumbotron-left a:hover {
+main #jumbotron #jumbotron-content #jumbotron-left .hover-blue-font:hover {
   color: #30488f;
 }
 
@@ -77,27 +77,47 @@ main #jumbotron #jumbotron-content #jumbotron-right img {
   height: 400px;
 }
 
-main #disengagement {
+main #people {
   background-color: #ffe7d2;
-  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+main #people #disengagement {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+main #people #team {
+  padding-top: 100px;
   display: flex;
   justify-content: center;
 }
 
-main #disengagement .container {
+main #people .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main #disengagement .container .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main #people .container h2 {
+  font-size: 28px;
 }
 
-main #disengagement .container .card-container .card {
+main #people .container .card-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+main #people .container .card-container .card {
   width: 300px;
   height: 300px;
   display: flex;
@@ -106,14 +126,20 @@ main #disengagement .container .card-container .card {
   align-items: center;
 }
 
-main #disengagement .container .card-container .card img {
+main #people .container .card-container .card img {
   width: 150px;
   height: 100px;
 }
 
-main #disengagement .container img {
-  width: 275px;
-  height: 250px;
+main #people .container .card-container .card p {
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+main #people .container img {
+  width: 300px;
+  height: 275px;
 }
 
 /* HEADER */
@@ -153,6 +179,26 @@ header nav .header-links ul li {
   float: left;
   list-style: none;
   padding-right: 40px;
+  position: relative;
+}
+
+header nav .header-links ul li .hidden-menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+header nav .header-links ul li .hidden-menu ul li {
+  list-style: none;
+}
+
+header nav .header-links ul #solutions:hover .hidden-menu {
+  display: block;
 }
 
 header nav .header-links ul a:hover {
