@@ -80,6 +80,40 @@ main #jumbotron #jumbotron-content #jumbotron-right img {
 main #disengagement {
   background-color: #ffe7d2;
   height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+main #disengagement .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #disengagement .container .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #disengagement .container .card-container .card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #disengagement .container .card-container .card img {
+  width: 150px;
+  height: 100px;
+}
+
+main #disengagement .container img {
+  width: 275px;
+  height: 250px;
 }
 
 /* HEADER */
