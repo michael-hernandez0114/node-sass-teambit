@@ -108,6 +108,8 @@ main {
         .block-container {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 100px;
+
 
             .img-only-block {
                 flex-basis: 48%;
@@ -115,15 +117,14 @@ main {
 
                 img {
                     height: 450px;
-
                     object-fit: contain;
-
                 }
             }
             .text-block {
                 flex-basis: 48%;
 
-                & > div {
+                .block-left > div,
+                .block-right > div {
                     padding-top: 10px;
                     padding-bottom: 10px;
                     width: 65%;
@@ -148,8 +149,6 @@ main {
                 .img-block {
                     text-align: center;
                 }
-
-
 
                 img {
 

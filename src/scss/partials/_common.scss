@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 body {
     color: $primary_text_color;
 }
@@ -14,6 +20,14 @@ body {
 
 .container {
     width: $full-width * 0.9;
+}
+
+.block-right {
+    float: right;
+}
+
+.block-left {
+    float: left;
 }
 
 a {

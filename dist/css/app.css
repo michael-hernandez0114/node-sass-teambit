@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   color: black;
 }
@@ -16,6 +22,14 @@ body {
 
 .container {
   width: 90vw;
+}
+
+.block-right {
+  float: right;
+}
+
+.block-left {
+  float: left;
 }
 
 a {
@@ -149,6 +163,7 @@ main #how-it-works {
 main #how-it-works .block-container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 main #how-it-works .block-container .img-only-block {
@@ -165,7 +180,8 @@ main #how-it-works .block-container .text-block {
   flex-basis: 48%;
 }
 
-main #how-it-works .block-container .text-block > div {
+main #how-it-works .block-container .text-block .block-left > div,
+main #how-it-works .block-container .text-block .block-right > div {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 65%;
