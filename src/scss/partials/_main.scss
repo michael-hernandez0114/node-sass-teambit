@@ -102,5 +102,63 @@ main {
         }
     }
 
+    #how-it-works {
+        padding: 100px 0;
+
+        .block-container {
+            display: flex;
+            justify-content: space-between;
+
+            .img-only-block {
+                flex-basis: 48%;
+
+
+                img {
+                    height: 450px;
+
+                    object-fit: contain;
+
+                }
+            }
+            .text-block {
+                flex-basis: 48%;
+
+                & > div {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    width: 65%;
+                }
+
+                h2 {
+                    font-size: $font_size_md;
+                }
+
+                p, a {
+                    font-size: $font_size_standard;
+                }
+
+                a {
+                    color: #30488F;
+
+                    &:hover {
+                        color: darkblue;
+                    }
+                }
+
+                .img-block {
+                    text-align: center;
+                }
+
+
+
+                img {
+
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+
 
 }

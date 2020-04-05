@@ -133,13 +133,68 @@ main #people .container .card-container .card img {
 
 main #people .container .card-container .card p {
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
 }
 
 main #people .container img {
   width: 300px;
   height: 275px;
+}
+
+main #how-it-works {
+  padding: 100px 0;
+}
+
+main #how-it-works .block-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #how-it-works .block-container .img-only-block {
+  flex-basis: 48%;
+}
+
+main #how-it-works .block-container .img-only-block img {
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main #how-it-works .block-container .text-block {
+  flex-basis: 48%;
+}
+
+main #how-it-works .block-container .text-block > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 65%;
+}
+
+main #how-it-works .block-container .text-block h2 {
+  font-size: 28px;
+}
+
+main #how-it-works .block-container .text-block p,
+main #how-it-works .block-container .text-block a {
+  font-size: 22px;
+}
+
+main #how-it-works .block-container .text-block a {
+  color: #30488F;
+}
+
+main #how-it-works .block-container .text-block a:hover {
+  color: darkblue;
+}
+
+main #how-it-works .block-container .text-block .img-block {
+  text-align: center;
+}
+
+main #how-it-works .block-container .text-block img {
+  width: 250px;
+  height: 200px;
 }
 
 /* HEADER */
